@@ -66,4 +66,4 @@ async def play(interaction: discord.Interaction, query: str):
     await interaction.followup.send(f"🎶 กำลังเล่น: **{title}**")
 
 
-bot.run(TOKEN)
+bot.run(OS.getenv('TOKEN'))
