@@ -8,7 +8,7 @@ def home():
     return "Server is running"
 
 def run():
-    app.run(host='0.0.0.0',post=8000)
+    app.run(host='0.0.0.0', post=5000, debug=true)
 
 def server_on():
     t = Thread(target=run)
