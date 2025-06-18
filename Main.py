@@ -7,7 +7,6 @@ intents = discord.Intents.default()
 intents.message_content = True
 intents.voice_states = True
 
-TOKEN = ('MTI4NzYyNjE4NzM4Mzc2NzA0MA.GGuCqa.ZNNOI-sWe4ZfVz83sN3xjnPQah-e3llkXQ9ZVw') 
 
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all()) 
 
