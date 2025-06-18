@@ -2,6 +2,8 @@ import OS
 import discord
 from discord import app_commands
 from discord.ext import commands
+from Mysever.py import server_on
+
 import yt_dlp
 
 intents = discord.Intents.default()
