@@ -1,14 +1,15 @@
-import OS
+import os
 import discord
 from discord import app_commands
 from discord.ext import commands
-from Mysever.py import server_on
+from Myserver import server_on
 
 import yt_dlp
 
 intents = discord.Intents.default()
 intents.message_content = True
 intents.voice_states = True
+
 
 
 bot = commands.Bot(command_prefix='!', intents=discord.Intents.all()) 
@@ -68,5 +69,6 @@ async def play(interaction: discord.Interaction, query: str):
 
     await interaction.followup.send(f"🎶 กำลังเล่น: **{title}**")
 
+server_on()
 
-bot.run(OS.getenv('TOKEN'))
+bot.run(os.getenv('TOKEN'))
